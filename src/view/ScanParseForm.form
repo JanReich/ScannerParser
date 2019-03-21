@@ -38,12 +38,12 @@
           <text value="Einfache-Mathe-Sprache"/>
         </properties>
       </component>
-      <component id="911d0" class="javax.swing.JRadioButton" binding="radioButton3" default-binding="true">
+      <component id="911d0" class="javax.swing.JRadioButton" binding="integerSprache">
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="RadioButton"/>
+          <text value="Integer-Sprache"/>
         </properties>
       </component>
       <component id="dc0f6" class="javax.swing.JButton" binding="checkButton">

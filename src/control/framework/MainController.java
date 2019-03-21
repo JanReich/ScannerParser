@@ -111,6 +111,46 @@ public class MainController {
         return error;
     }
 
+    public void integerScanAndParse(String input) {
+
+        if(!integerScan(input)) scanParseForm.getOutputField().append("Das Wort befindet sich in der Integer-Sprache\n");
+        else scanParseForm.getOutputField().append("Error: Das Wort befindet sich nicht in der Integer-Sprache\n");
+    }
+
+    public boolean integerScan(String input) {
+
+        int charPos = 0;
+        char selectedChar;
+        boolean error = false;
+        boolean vorzeichen = false;
+
+        input += '#';
+
+        while (input.charAt(charPos) != '#' && !error) {
+
+            selectedChar = input.charAt(charPos);
+
+            if((selectedChar == '+' || selectedChar == '-') && !vorzeichen) {
+
+                charPos += 1;
+                vorzeichen = true;
+            }
+
+            else if(selectedChar == '0' || selectedChar == '1' || selectedChar == '2' || selectedChar == '3' || selectedChar == '4' || selectedChar == '5' || selectedChar == '6' || selectedChar == '7' || selectedChar == '8' || selectedChar == '9') {
+
+                charPos += 1;
+            }
+
+            else {
+
+                error = true;
+            }
+        }
+
+        return error;
+    }
+
+
 
 
     private boolean lalParse(List<LanguageToken> tokenList){

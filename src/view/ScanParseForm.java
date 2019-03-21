@@ -11,9 +11,9 @@ public class ScanParseForm extends JFrame {
     private JTextField inputField;
     private JTextArea outputField;
 
+    private JRadioButton integerSprache;
     private JRadioButton einfacheMatheSprache;
     private JRadioButton lalSpracheRadioButton;
-    private JRadioButton radioButton3;
 
     private JPanel panel;
     private JButton checkButton;
@@ -33,6 +33,7 @@ public class ScanParseForm extends JFrame {
 
                 if(lalSpracheRadioButton.isSelected()) mainController.lalScanAndParse(inputField.getText());
                 else if(einfacheMatheSprache.isSelected()) mainController.mathScanAndParse(inputField.getText());
+                else if(integerSprache.isSelected()) mainController.integerScanAndParse(inputField.getText());
             }
         });
     }
