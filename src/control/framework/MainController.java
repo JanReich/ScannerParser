@@ -97,6 +97,7 @@ public class MainController {
 
             if(selectedChar == 'x') charPos += 1;
             else if(selectedChar == 'y') charPos += 1;
+            else if(selectedChar == 'z') charPos += 1;
             else if(selectedChar == '+') {
 
                 charPos += 1;
@@ -104,6 +105,7 @@ public class MainController {
 
                 if(selectedChar == 'x') charPos += 1;
                 else if(selectedChar == 'y') charPos += 1;
+                else if(selectedChar == 'z') charPos += 1;
                 else error = true;
             } else error = true;
         }
